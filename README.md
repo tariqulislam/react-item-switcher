@@ -8,7 +8,7 @@ Basic Properties to Initilized the `ItemSwitcher`
 
 ```javascript
 <ItemSwitcher
-  items= [{text: 'one', value='one'}, {text: 'two', value='two'}],
+  items= {[{text: 'one', value:'one'}, {text: 'two', value:'two'}]}
   isMultiple={true}
   selectSize={10}
   getSelectedValue={this.getSelectedValue}
@@ -27,6 +27,51 @@ Basic Properties to Initilized the `ItemSwitcher`
 
 5. `onChangeValue` it will provide the selected items value when change switch one items from left to right, you will get value of
    selected right size list items array.
+
+# Example Code
+
+```javascript
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import ItemSwitcher from "./ItemSwitcher";
+
+export class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedItems: []
+    }
+  }
+
+  getSelectedValue = (selectedItems) => {
+    console.log(selectedItems)
+    this.setState({selectedItems: selectedItems})
+  };
+
+  getChangeValue = (selectedItems) => {
+    console.log(selectedItems)
+    this.setState({selectedItems: selectedItems})
+  }
+
+  render() {
+    return (
+        <div>
+          Test element
+          <ItemSwitcher
+            items= {[{text: 'one', value:'one'}, {text: 'two', value:'two'}]}
+            isMultiple={true}
+            selectSize={10}
+            getSelectedValue={this.getSelectedValue}
+            onChangeValue={this.getChangeValue}
+          />
+        </div>
+    );
+  }
+}
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
+```
 
 # Design Properties
 

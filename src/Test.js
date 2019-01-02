@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import ReactDOM from 'react-dom';
 import _ from "lodash";
 
 import "./styles.css";
 
-export class ItemSwitcher extends Component {
+export class Test extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -43,7 +42,14 @@ export class ItemSwitcher extends Component {
     });
 
     /** get Selected All value for selected options */
+    let actualSelectedOptions = [...this.itemDeselectedList]
+      .filter(option => option.selected)
+      .map(option => {
+        return { value: option.value, text: option.text };
+      });
+
     if (typeof this.props.onChangeValue === 'function') {
+        debugger
       this.props.onChangeValue(selectOptions);
     }  
   };
@@ -193,7 +199,7 @@ export class ItemSwitcher extends Component {
   }
 }
 
-ItemSwitcher.defaultProps = {
+Test.defaultProps = {
   defaultItemList: [
   ],
   defaultSize: 10,
@@ -207,4 +213,4 @@ ItemSwitcher.defaultProps = {
   defaultShowGetValueButton: "block"
 };
 
-export default ItemSwitcher
+export default Test
