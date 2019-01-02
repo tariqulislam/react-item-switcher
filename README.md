@@ -29,3 +29,7 @@ Basic Properties to Initilized the `ItemSwitcher`
    selected right size list items array.
 
 # Design Properties
+
+| Properties | Description |
+| :--------: | :---------: |
+|    size    |             |
