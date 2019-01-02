@@ -1,6 +1,6 @@
 {
-  "name": "new",
-  "version": "1.0.0",
+  "name": "react-item-switcher",
+  "version": "1.0.3",
   "description": "",
   "keywords": [],
   "main": "src/index.js",

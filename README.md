@@ -33,7 +33,7 @@ Basic Properties to Initilized the `ItemSwitcher`
 ```javascript
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import ItemSwitcher from "./ItemSwitcher";
+import ItemSwitcher from "react-item-switcher";
 
 export class App extends Component {
   constructor(props) {
@@ -78,7 +78,46 @@ ReactDOM.render(<App />, rootElement);
 |      Properties       |                                             Description                                             |
 | :-------------------: | :-------------------------------------------------------------------------------------------------: |
 |     `selectWidth`     |             using for increase or dicrease the width of list.(e.g selectWidth: "10px")              |
-| `leftBackgroundColor` | using for add the background color in list box. its support `color code` and `hex` and `rgba` color |
-|  `leftSelectBorder`   |        using for add the border style in list box. (e.g leftSelectBorder: "1px solid blue")         |
+| `leftBackgroundColor` and `rightBackgroundColor` | using for add the background color in list box. its support `color code` and `hex` and `rgba` color |
+|  `leftSelectBorder` and `rightSelectBorder`   |        using for add the border style in list box. (e.g leftSelectBorder: "1px solid blue")         |
 |    `itemTextAlign`    |                   using for align the text. it supports `center`, `left`, `right`                   |
 | `showGetValueButton`  |                   hide and show the `Get Value` button.it takes `true` or `false`                   |
+
+## With Design Example
+
+### Using `selectWidth` properties
+
+```javascript
+<ItemSwitcher
+   ...
+  selectSize={20}
+   ...
+/>
+```
+1. Using the numeric size to increase and decrease the size of the listbox
+
+### using `leftBackgroundColor` and `right properties
+```javascript
+<ItemSwitcher
+  ...
+  leftBackgroundColor={"#898"}
+  righBackgroundColor={"blue"}
+  ...
+/>
+```
+1. `leftBackgroundColor` will takes the `color code` or `hex` or `rgba` color
+2. `rightBackgroundColor` will takes the `color code` or `hex` or `rgba` color
+
+1. Using the numeric size to increase and decrease the size of the listbox
+
+### using `leftSelectBorder` and `rightSelectBorder and `right properties
+```javascript
+<ItemSwitcher
+  ...
+  leftSelectBorder={"1px solid blue"}
+  rightSelectBorder={"1px solid green"}
+  ...
+/>
+```
+1. `leftBackgroundColor` will takes the `color code` or `hex` or `rgba` color
+2. `rightBackgroundColor` will takes the `color code` or `hex` or `rgba` color

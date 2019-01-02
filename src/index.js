@@ -156,7 +156,7 @@ export class ItemSwitcher extends Component {
               size={this.props.selectSize || this.props.defaultSize}
               style={{
                 width: `${this.props.selectWidth || this.props.defaultWidth}`,
-                backgroundColor: `${this.props.righBackground ||
+                backgroundColor: `${this.props.rightBackgroundColor ||
                   this.props.defaultRightBackgroundColor}`,
                 border: `${this.props.rightSelectBorder ||
                   this.props.defaultRightSelectBorder}`
