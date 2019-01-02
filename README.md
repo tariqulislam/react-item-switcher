@@ -30,10 +30,10 @@ Basic Properties to Initilized the `ItemSwitcher`
 
 # Design Properties
 
-|     Properties      |                                             Description                                             |
-| :-----------------: | :-------------------------------------------------------------------------------------------------: |
-|     selectWidth     |             using for increase or dicrease the width of list.(e.g selectWidth: "10px")              |
-| leftBackgroundColor | using for add the background color in list box. its support `color code` and `hex` and `rgba` color |
-|  leftSelectBorder   |        using for add the border style in list box. (e.g leftSelectBorder: "1px solid blue")         |
-|    itemTextAlign    |                   using for align the text. it supports `center`, `left`, `right`                   |
-| showGetValueButton  |                   hide and show the `Get Value` button.it takes `true` or `false`                   |
+|      Properties       |                                             Description                                             |
+| :-------------------: | :-------------------------------------------------------------------------------------------------: |
+|     `selectWidth`     |             using for increase or dicrease the width of list.(e.g selectWidth: "10px")              |
+| `leftBackgroundColor` | using for add the background color in list box. its support `color code` and `hex` and `rgba` color |
+|  `leftSelectBorder`   |        using for add the border style in list box. (e.g leftSelectBorder: "1px solid blue")         |
+|    `itemTextAlign`    |                   using for align the text. it supports `center`, `left`, `right`                   |
+| `showGetValueButton`  |                   hide and show the `Get Value` button.it takes `true` or `false`                   |
