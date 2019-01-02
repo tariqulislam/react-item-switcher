@@ -1,13 +1,12 @@
 {
   "name": "react-item-switcher",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "keywords": ["multi select", "item list", "select list", "item switcher"],
   "main": "src/index.js",
   "dependencies": {
     "lodash": "4.17.11",
     "react": "16.5.2",
-    "react-color": "2.14.1",
     "react-dom": "16.5.2",
     "react-scripts": "^2.1.2"
   },
